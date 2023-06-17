@@ -15,12 +15,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Controller
-@RequestMapping(value= "/user")
+@RequestMapping(value= "/test")
 public class TestDataController {
     @Autowired
     private TestDataService testDataService;
 
-    @PostMapping("/login")
+    @PostMapping("/getdata")
     @ResponseBody
     public Map<String,String> login(@RequestParam(value = "username",required = false) String username,
                                     @RequestParam(value = "password",required = false) String password,

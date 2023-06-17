@@ -2,11 +2,13 @@ package com.xyai.shenniuban.entity;
 
 import com.baomidou.mybatisplus.annotation.*;
 import com.xyai.shenniuban.enums.TestEnum;
+import lombok.ToString;
 import org.apache.ibatis.type.JdbcType;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
+@ToString
 public class TestData  implements Serializable {
     @TableId(type = IdType.AUTO)
     private Long id;
